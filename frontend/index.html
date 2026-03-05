@@ -688,7 +688,7 @@
                 
                 if (!window.vrmState.isSpeaking && expressionTimer > 4 + Math.random() * 4) {
                     expressionTimer = 0;
-                    const expressions = ['neutral', 'happy', 'relaxed'];
+                    const expressions = ['happy', 'relaxed'];
                     currentExpression = expressions[Math.floor(Math.random() * expressions.length)];
                     
                     if (vrm.expressionManager) {
@@ -1253,7 +1253,7 @@
                 </>
             );
         };
-
+        
         ReactDOM.createRoot(document.getElementById('root')).render(<VeenaAI />);
     </script>
 </body>
